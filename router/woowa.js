@@ -34,7 +34,7 @@ app.get(listMap.map((v) => v.name), (req,res) => {
 /**** router : each item ****/
 listMap.forEach((v) => {
 	app.get(v.name + '/:id' , (req,res) => {
-			const id = req.params.id;
+			const id = req.params.id.toUpperCase();
 			const resultJSON = woowaApi.getItem(v.name, v.uniqueID, id);
 			res.json(resultJSON);
 	});
