@@ -21,7 +21,7 @@ const listMap =  [
 	{name : '/course', 	uniqueID : 'detail_hash'},
 	{name : '/soup', 		uniqueID : 'detail_hash'},
 	{name : '/side', 		uniqueID : 'detail_hash'},
-	{name : '/map', 		uniqueID : 'hash'}
+	{name : '/detail', 		uniqueID : 'hash'}
 ]
 
 /**** router : all item ****/
