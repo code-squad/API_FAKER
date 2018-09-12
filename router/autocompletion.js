@@ -12,15 +12,6 @@ app.get('/', (req,res) => {
 		res.json({'name' : 'welcome fakedb autocompletion'});
 });
 
-
-/* Usage client example 
-fetch("http://localhost:8080/ac/%EB%90%9C%EC%9E%A5").then((res) => {
-   return res.json();
-}).then((result) => {
-  console.log(result[0] , "에 대한 결과입니다", result[1]);
-});
-*/
-
 app.get('/:query', (req,res) => {
 	const query = req.params.query;
 	const resultJSON = acAPI.getItems(query);
