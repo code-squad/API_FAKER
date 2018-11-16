@@ -7,7 +7,9 @@ app.use(cors())
 
 app.get('/', (req,res) => {
 	const resultJSON = todo.getTodoList();
-	res.json(resultJSON);
+	setTimeout( ()=> {
+		res.json(resultJSON);
+	}, 4000);
 })
 
 app.use(function(req, res, next) {
